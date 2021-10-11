@@ -39,7 +39,7 @@ HideOnScroll.propTypes = {
   window: PropTypes.func,
 };
 
-export default function HideAppBar(props) {
+export default function Navbar(props) {
   return (
     <React.Fragment>
       <CssBaseline />
