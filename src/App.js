@@ -1,16 +1,18 @@
 import * as React from 'react';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Navbar from './components/Header';
+import Home from './pages/Home';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
     <Router>
-      <Navbar></Navbar>
+      <Navbar />
       <Switch>
         <Route exact path='/' component={Home} />
       </Switch>
+    <Footer />
     </Router>
     </>
   )
