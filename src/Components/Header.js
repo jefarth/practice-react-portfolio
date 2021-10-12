@@ -5,12 +5,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import CssBaseline from '@mui/material/CssBaseline';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 import Slide from '@mui/material/Slide';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from 'react-router-dom';
@@ -40,16 +37,17 @@ HideOnScroll.propTypes = {
   window: PropTypes.func,
 };
 
-export default function Navbar(props) {
+export default function Header(props) {
   return (
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar>
+            {/* Navbar */}
         <Toolbar>
           <Button component={Link} to="/" color = "inherit">.main()</Button>
           <Button color="inherit">.aboutMe()</Button>
-          <Button color="inherit">.projects()</Button>
+          <Button component={Link} to="/projects" color="inherit">.projects()</Button>
           <Button color="inherit">.contactMe()</Button>
           <IconButton
             size="large"
