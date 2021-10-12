@@ -1,25 +1,30 @@
 import React from 'react';
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles({
+    root: {
+      background: '#682ae9',
+      border: 0,
+      borderRadius: 3,
+      boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+      color: 'dark',
+      height: '100vh',
+      textAlign: 'center',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }
+  });
 
 const Home = () => {
+    const classes = useStyles();
+
     return (
         <main id="main">
-            <div
-                class="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0 jumbotron jumbotron-fluid">
-                <div class="text-center container">
-                    <h1 class="display-1">Jeremiah Farthing</h1>
-                    <div class="Typist lead typist"> Full Stack Web Developer </div>
-                    <div class="p-5">
-                        <a class="email p-2" href="https://github.com/jefarth" aria-label="Github">
-                            <i class="fab fa-github fa-3x socialicons"></i>
-                        </a>
-                        <a
-                            class="email p-2" href="https://www.linkedin.com/in/jeremiah-farthing/"
-                            aria-label="My linkedin"><i class="fab fa-linkedin  fa-3x socialicons"></i></a><a
-                            class="email p-2" href="mailto:bonilhav@gmail.com">
-                            <i class="far fa-envelope fa-3x socialicons"></i>
-                        </a>
-                    </div>
-                </div>
+            <div className={classes.root}>
+                <h1>Jeremiah Farthing</h1>
+                <div> Full Stack Web Developer </div>
             </div>
         </main>
     );
