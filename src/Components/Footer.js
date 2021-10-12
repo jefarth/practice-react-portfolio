@@ -1,30 +1,32 @@
 import * as React from 'react';
-import { makeStyles } from '@mui/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-const useStyles = makeStyles({
-    root: {
-      background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-      border: 0,
-      borderRadius: 3,
-      boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-      color: 'dark',
-      height: 45,
-      width: '100%',
-      padding: '0px 10px',
-      textAlign: 'center',
-    },
-  });
 
-const Footer = () => {
-    const classes = useStyles();
 
+const theme = createTheme();
+
+export default function Footer() {
   return (
-    <footer className={classes.root}>
-      <div className="container text-center mb-5">
-        <h4>&copy; {new Date().getFullYear()} - Jeremiah Farthing's Portfolio </h4>
-      </div>
-    </footer>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      {/* Footer */}
+      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+        <Typography variant="h6" align="center" gutterBottom>
+          Jeremiah Farthing's Portfolio
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          align="center"
+          color="text.secondary"
+          component="p"
+        >
+          Please contact me at jefarth.dev@gmail.com
+        </Typography>
+      </Box>
+      {/* End footer */}
+    </ThemeProvider>
   );
-};
-
-export default Footer;
+}
