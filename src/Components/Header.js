@@ -19,7 +19,7 @@ const useStyles = makeStyles({
       borderRadius: 3,
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
       color: 'dark',
-      height: 45,
+      height: 60,
       width: '100%',
       padding: '0px 10px',
       textAlign: 'center',
@@ -61,7 +61,7 @@ export default function Header(props) {
             {/* Navbar */}
         <Toolbar>
           <Button component={Link} to="/" color = "inherit">.main()</Button>
-          <Button color="inherit">.aboutMe()</Button>
+          <Button component={Link} to="/aboutme" color="inherit">.aboutMe()</Button>
           <Button component={Link} to="/projects" color="inherit">.projects()</Button>
           <Button color="inherit">.contactMe()</Button>
           <IconButton
