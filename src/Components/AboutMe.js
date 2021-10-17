@@ -19,20 +19,20 @@ export default function AboutMe() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <div>
-                <h3>About Me</h3>
-                <p>
+            <div style={{ marginBottom: "20px", marginTop: "-4px", paddingTop: "20px" }}>
+                <h1 style={{ paddingBottom: "100px", paddingTop: "50px" }}>About Me</h1>
+                <h3>
                 I am Jeremiah Farthing. I am a born and raised Colorado native.
                 I have one dog and three cats I love and take care of.
                 Previously I had spent most of my life doing physical labor and my main skill set is held as an Automotive Technician. 
-                </p>
+                </h3>
             </div>
-            <div>
+            <div style={{ paddingBottom: "100px", paddingTop: "100px" }}>
                 <h3>Skills</h3>
-                <p>
+                <h3>
                 I currently know how to work with the languages of HTML, CSS, and Javascript. I hold knowledge of how to use jQuery, Node.js, Express.js,
                 React.js, Database Theory, MongoDB, MySQL, Command Line, and Git. I have also gone over Computer Science applied to Javascript.
-                </p>
+                </h3>
             </div>
         </div>
     )

@@ -33,7 +33,7 @@ export default function Projects() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <main className={classes.root}>
+      <main className={classes.root} style={{ marginTop: "-4px", paddingTop: "20px" }}>
         <Box
           sx={{
             pt: 8,

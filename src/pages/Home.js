@@ -21,7 +21,7 @@ const Home = () => {
     const classes = useStyles();
 
     return (
-        <main id="main">
+        <main id="main" style={{ marginTop: "-4px" }}>
             <div className={classes.root}>
                 <h1>Jeremiah Farthing</h1>
                 <div> Full Stack Web Developer </div>
