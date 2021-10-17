@@ -2,7 +2,7 @@
   [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
 
   ## Description
-This is my portfolio page. Please feel free to look around and check out the live page [here]().
+This is my portfolio page. Please feel free to look around and check out the live page [here](https://jefarth.github.io/react-portfolio/#/).
 
 <!-- ![Preview](./assests/images/port-top.png) -->
 
