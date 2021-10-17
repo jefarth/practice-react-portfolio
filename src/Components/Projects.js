@@ -10,17 +10,32 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 
 const theme = createTheme();
 
+const useStyles = makeStyles({
+  root: {
+    background: 'linear-gradient(45deg, #682ae9 30%, #FE6B8B 90%)',
+    border: 0,
+    borderRadius: 3,
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    color: 'dark',
+    height: '100vh',
+    width: '100%',
+    padding: '0px 10px',
+    textAlign: 'center',
+  },
+});
+
 export default function Projects() {
+  const classes = useStyles();
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <main>
+      <main className={classes.root}>
         <Box
           sx={{
-            bgcolor: 'background.paper',
             pt: 8,
             pb: 6,
           }}
