@@ -60,7 +60,7 @@ export default function Header(props) {
       <HideOnScroll {...props}>
         <AppBar className={classes.root}>
             {/* Navbar */}
-        <Toolbar>
+        <Toolbar sx={{ display: 'flex', flexDirection: 'row' }}>
           <Button component={Link} to="/" color = "inherit" className="sizing">.main()</Button>
           <Button component={Link} to="/aboutme" color="inherit" className="sizing">.aboutMe()</Button>
           <Button component={Link} to="/projects" color="inherit" className="sizing">.projects()</Button>
