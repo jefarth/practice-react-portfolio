@@ -11,6 +11,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@mui/styles';
+import '../App.css';
 
 const useStyles = makeStyles({
     root: {
@@ -60,16 +61,17 @@ export default function Header(props) {
         <AppBar className={classes.root}>
             {/* Navbar */}
         <Toolbar>
-          <Button component={Link} to="/" color = "inherit">.main()</Button>
-          <Button component={Link} to="/aboutme" color="inherit">.aboutMe()</Button>
-          <Button component={Link} to="/projects" color="inherit">.projects()</Button>
-          <Button color="inherit">.contactMe()</Button>
+          <Button component={Link} to="/" color = "inherit" className="sizing">.main()</Button>
+          <Button component={Link} to="/aboutme" color="inherit" className="sizing">.aboutMe()</Button>
+          <Button component={Link} to="/projects" color="inherit" className="sizing">.projects()</Button>
+          <Button component={Link} to="/contact" color="inherit" className="sizing">.contactMe()</Button>
           <IconButton
             size="large"
             edge="center"
             color="inherit"
             aria-label="github"
             sx={{ mr: 2 }}
+            href="https://github.com/jefarth"
           >
             <GitHubIcon />
           </IconButton>
@@ -79,6 +81,7 @@ export default function Header(props) {
             color="inherit"
             aria-label="linkedIn"
             sx={{ mr: 2 }}
+            href="https://www.linkedin.com/in/jeremiah-farthing"
           >
             <LinkedInIcon />
           </IconButton>
