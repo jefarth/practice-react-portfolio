@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAEE,kCACE,QAAS,cAAgB,CAC3B","file":"main.87c77371.chunk.css","sourcesContent":["\n\n  @media screen and (min-width: 620) {\n    .sizing {font-size: 20px;}\n  }"]}
