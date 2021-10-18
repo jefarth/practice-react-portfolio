@@ -56,75 +56,76 @@ export default function Projects() {
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
+            {/* Project */}
               <Grid item xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ minHeight: '100%', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
                     component="img"
                     image="https://source.unsplash.com/random"
                     alt="random"
                   />
-                  <CardContent sx={{ flexGrow: 1 }}>
+                  <CardContent sx={{ flexGrow: 1, marginBottom:"-15px" }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      This is my card
+                      RPG Character Creator
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
+                      Create an account to gain the ability to make a custom character for your next RPG adventure!
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small" href="https://github.com/jefarth/rpg-character-sheet" >View Live</Button>
-                    <Button size="small" href="https://github.com/jefarth/rpg-character-sheet" >View Github</Button>
+                  <CardActions  sx={{ paddingLeft: "25px" }}>
+                    <Button size="small" href="https://jefarth-rpg-database.herokuapp.com/" target="_blank" >View on Heroku</Button>
+                    <Button size="small" href="https://github.com/jefarth/rpg-character-sheet" target="_blank" >View on Github</Button>
                   </CardActions>
                 </Card>
               </Grid>
+              {/* Project */}
               <Grid item xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ minHeight: '100%', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
                     component="img"
                     image="https://source.unsplash.com/random"
                     alt="random"
                   />
-                  <CardContent sx={{ flexGrow: 1 }}>
+                  <CardContent sx={{ flexGrow: 1, marginBottom:"-35px" }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      This is my card
+                      Note Taker
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
+                      Take notes and save them to view later!
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small" href="https://github.com/jefarth/rpg-character-sheet" >View Live</Button>
-                    <Button size="small" href="https://github.com/jefarth/rpg-character-sheet" >View Github</Button>
+                  <CardActions  sx={{ paddingLeft: "25px"}}>
+                    <Button size="small" href="https://jefarth-note-taker.herokuapp.com/" target="_blank" >View on Heroku</Button>
+                    <Button size="small" href="https://github.com/jefarth/Note-Taker" target="_blank" >View on Github</Button>
                   </CardActions>
                 </Card>
               </Grid>
+              {/* Project */}
               <Grid item xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ minHeight: '100%', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
                     component="img"
                     image="https://source.unsplash.com/random"
-                    alt="random"
+                    alt="weather dashboard"
                   />
-                  <CardContent sx={{ flexGrow: 1 }}>
+                  <CardContent sx={{ flexGrow: 1, marginBottom:"-35px" }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      This is my card
+                     Weather Dashboard
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
+                      Look up any city to get a weather forcast! Displays current weather information
+                      as well as a five day forcast!
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small" href="https://github.com/jefarth/rpg-character-sheet" >View Live</Button>
-                    <Button size="small" href="https://github.com/jefarth/rpg-character-sheet" >View Github</Button>
+                  <CardActions  sx={{ paddingLeft: "25px"}}>
+                    <Button size="small" href="https://jefarth.github.io/Weather-Dashboard/" target="_blank" >View on Heroku</Button>
+                    <Button size="small" href="https://github.com/jefarth/Weather-Dashboard" target="_blank" >View on Github</Button>
                   </CardActions>
                 </Card>
               </Grid>
