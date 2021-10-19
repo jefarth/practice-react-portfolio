@@ -11,6 +11,9 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { makeStyles } from '@mui/styles';
+import rpgPic from '../images/rpg-character.png';
+import notePic from '../images/note-taker.png';
+import weatherPic from '../images/weather-dashboard.png'
 
 const theme = createTheme();
 
@@ -63,10 +66,10 @@ export default function Projects() {
                 >
                   <CardMedia
                     component="img"
-                    image="https://source.unsplash.com/random"
+                    image={rpgPic}
                     alt="random"
                   />
-                  <CardContent sx={{ flexGrow: 1, marginBottom:"-15px" }}>
+                  <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
                       RPG Character Creator
                     </Typography>
@@ -87,10 +90,10 @@ export default function Projects() {
                 >
                   <CardMedia
                     component="img"
-                    image="https://source.unsplash.com/random"
+                    image={notePic}
                     alt="random"
                   />
-                  <CardContent sx={{ flexGrow: 1, marginBottom:"-35px" }}>
+                  <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Note Taker
                     </Typography>
@@ -111,10 +114,10 @@ export default function Projects() {
                 >
                   <CardMedia
                     component="img"
-                    image="https://source.unsplash.com/random"
+                    image={weatherPic}
                     alt="weather dashboard"
                   />
-                  <CardContent sx={{ flexGrow: 1, marginBottom:"-35px" }}>
+                  <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
                      Weather Dashboard
                     </Typography>
